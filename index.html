@@ -1,0 +1,59 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div id="container">
+    <div class="beginning">
+      <h3 class="intro">Care for a game of Tic Tac Toe?</h3>
+      <h3>Let's <button id="play" type="button" name="button" onclick="startGame()">Play</button> <span>|</span></h3>
+      <button type="button" name="button" onclick="showSettings()" id="settings">&#9776;</button>
+    </div>
+    <table>
+      <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+      </tr>
+    </table>
+    <div class="settings">
+      <h1>Settings</h1>
+       <div>
+         <button class="active" id="Ochoice" onclick="changeLetterO">O</button>
+         <button id="Xchoice" onclick="changeLetterX">X</button>
+      </div>
+      <br>
+      <div>
+        <input type="radio" name="numOfPlayers" id="oneplayer" checked>
+        <label for="oneplayer">One Player</label>
+        <input type="radio" name="numOfPlayers" id="twoplayer">
+        <label for="oneplayer">Two Player</label>
+      </div>
+      <br>
+    <div id="difficulty">
+      <input type="radio" value="noob" class="difficultyClass" name="difficulty" id="noob">
+      <label for="noob">Noob</label>
+      <input type="radio" value = "intermediate" class="difficultyClass" name="difficulty" id="intermediate">
+      <label for="intermediate">Intermediate</label>
+      <input type="radio" onclick="var diff='master'" value = "master" class="difficultyClass" name="difficulty" id="master" checked>
+      <label for="master">Master</label>
+    </div>
+  </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
